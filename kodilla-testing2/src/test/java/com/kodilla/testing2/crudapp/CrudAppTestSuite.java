@@ -84,8 +84,12 @@ public class CrudAppTestSuite {
     }
 
     @Test
-    public void shouldCreateTrelloCard() throws InterruptedException {
+    public void 
+        shouldCreateTrelloCard() throws InterruptedException {
+        //Given
+        //When
         String taskName = createCrudAppTestTask();
+        //Then
         sendTestTaskToTrello(taskName);
         clearCrudApp(taskName);
     }
